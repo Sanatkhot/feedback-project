@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Feedback{% endblock title %}
+    {%block body%}
+    <div class="feedback">
+        <div class="formfeed">
+            <form method="post">
+                {% csrf_token %}
+                {{feedback.as_p}}
+                <input type = 'submit' value = 'submit' class="bg-success text-light" >
+            </form>
+        </div>
+        <div class="showfeed">
+                {% for i in show%}
+                <div class="card">
+                <br><br>
+                Student:{{i.username}}
+                <div class="cont">
+                {{i.feedback}}
+            <br><br>
+        </div>
+    </div>
+    {%endfor%}
+        </div>
+    </div>
+    {%endblock%}

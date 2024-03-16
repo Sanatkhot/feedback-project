@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Feedback{% endblock title %}
+{%block body%}
+{% for i in show%}
+<div class="card">
+    <br><br>
+    Student:{{i.username}}
+    <div class="cont">
+        {{i.feedback}}
+        <br><br>
+    </div>
+  </div>
+  {%endfor%}
+{%endblock%}

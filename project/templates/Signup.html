@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}SignUp{% endblock title %}
+{%block body%}
+<div class="signup">
+    <form method="post">
+        {% csrf_token %}
+        <!-- {{signup.as_p}} -->
+        <table>
+            {% for i in fm%}
+            <tr>
+                <td>{{i.label_tag}}</td>
+                <td>{{i}}</td>
+                <td>{{i.errors}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        <input type="submit" value="Register" class="bg-success text-light" >
+    </form>
+</div>
+
+{%endblock%}

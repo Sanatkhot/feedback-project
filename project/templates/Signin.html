@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}SignUp{% endblock title %}
+{%block body%}
+<div class="signup">
+    <form method="post" novalidate>
+        {% csrf_token %}
+        {{user_data.as_p}}
+        <input type="submit" value="SignIn" class="bg-success text-light">
+    <p>Don't have an account? <a href="signup">Register</a></p>
+    </form>
+<div>   
+{%endblock%}

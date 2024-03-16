@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Courses{% endblock title %}
+{% load static %}
+{%block body%}
+<div class="mainCourse">
+        <h2 style="text-align: center;">Courses We Offered</h2>
+        <br>
+        <br>
+        <div class="row featurette">
+            <div class="col-md-6 mt-0.1">
+              <h2 class="featurette-heading">Python Full Stack</h2>
+              <br>
+              <p class="lead">Become Python Developer Roadmap of 6 Months
+                <pre>-Core+Advance Python (2 Month)</pre>
+                <pre>-Web Designing(2 Month)</pre>
+                <pre>-Database (1 Month)</pre>
+                <pre>-Django Framework (1 Month) + Projects</pre>
+              </p>
+            </div>
+            <div class="col-md-5 mt-5">
+              <img class="featurette-image img-fluid mx-auto" src="{% static 'images/Python.webp'%}" alt="Generic placeholder image">
+            </div>
+          </div>
+          <hr class="featurette-divider">
+          <div class="row featurette">
+            <div class="col-md-6 order-md-3 ml-4">
+              <h2 class="featurette-heading">Java FullStack Developer</h2>
+              <br>
+              <p class="lead">Become Java Developer Roadmap of 6 Months
+                <pre>-Core+Advance Java (2 Month)</pre>
+                <pre>-Web Designing(2 Month)</pre>
+                <pre>-Database (1 Month)</pre>
+                <pre>-Spring Boot (1 Month) + Projects</pre>
+              </p>
+            </div>
+            <div class="col-md-5 order-md-1 mt-5">
+              <img class="featurette-image img-fluid mx-auto" src="{% static 'images/Java.png'%}"  alt="Generic placeholder image">
+            </div>
+          </div>
+  
+          <hr class="featurette-divider">
+  
+          <<div class="row featurette">
+            <div class="col-md-6 mt-0.1">
+              <h2 class="featurette-heading">Master In DataScience</h2>
+              <br>
+              <p class="lead">Become Data Scientist In 6 Month of Roadmap
+                <pre>-Core+Advance Python (2 Month)</pre>
+                <pre>-Database(SQL)(1 Month)</pre>
+                <pre>-Machine learning(2 Month)</pre>
+                <pre>-Artificial Intelligence+ Projects</pre>
+              </p>
+            </div>
+            <div class="col-md-5 mt-5">
+              <img class="featurette-image img-fluid mx-auto" src="{% static 'images/Data.jpg'%}" alt="Generic placeholder image">
+            </div>
+          </div>
+          <br>
+
+          <!-- /END THE FEATURETTES -->
+  
+        </div><!-- /.container -->
+      </main>
+  
+</div>
+
+{%endblock%}

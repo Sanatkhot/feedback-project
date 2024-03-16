@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{%block body%}
+{%load static%}
+<div class="idx">
+<main role="main">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="first-slide" src="{% static 'images/C1.jpg'%}" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>Welcome To 3RI Technologies</h1>
+              <p>Data Analytics | AWS | DevOps | Salesforce</p>
+              <p>Full Stack |  Full Stack Java | MERN Stack | MEAN Stack</p>
+              <p><a class="btn btn-lg btn-primary" href="/signup" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="second-slide" src="{% static 'images/C4.jpg'%}" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="third-slide" src="{% static 'images/C3.jpg'%}" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h1 class="featurette-heading">Industrial Expert Trainers..</h1>
+          <br>
+          <p class="lead">Highly Qualified and Industry Experience Professionals For Providing Real-Time Scenario Based Training.
+          Our dedicated team of trainers brings a wealth of industry experience and technical expertise to our training institute.
+          Passionate about education, our trainers are committed to empowering students with the knowledge and skills necessary to excel in the dynamic field of technology.
+          With a focus on practical, hands-on learning, our trainers create an interactive and engaging classroom environment, ensuring a comprehensive understanding of the subject matter. 
+          Each trainer is carefully selected for their proficiency in specific software domains, enabling us to offer specialized courses tailored to meet the diverse needs of our students.  
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" src="{% static 'images/t4.jpg'%}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h1 class="featurette-heading">Flexible Batches</h1>
+          <br>
+          <p class="lead">Our training institute offers flexible batches to accommodate the diverse schedules of our students, allowing them to pursue their education at their convenience.
+
+            With morning, afternoon, and evening sessions, our flexible batches cater to individuals with varying work commitments and personal obligations.
+            
+            Students have the option to choose from weekend-only, weekday-only, or a combination of both, providing a customized learning experience that fits their lifestyle.
+            
+            Our flexible batch schedules enable working professionals to upskill or reskill without interrupting their current job responsibilities, promoting a seamless integration of education and career development.
+            
+            Small class sizes in each batch ensure personalized attention from our experienced trainers, fostering a conducive learning environment for all participants.
+            We understand that life can be unpredictable, so our flexible batches come with the option for students to attend makeup classes or switch between batches when needed.
+            Online and offline learning options are available within our flexible batches, giving students the choice to attend classes in-person or remotely based on their preferences or circumstances.
+            Whether you're a full-time student, a working professional, or someone with other commitments, our flexible batches provide the adaptability needed to pursue your educational goals.
+            Our institute's commitment to accessibility is reflected in our flexible batch schedules, ensuring that education remains within reach for everyone, regardless of their daily routine.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="featurette-image img-fluid mx-auto" src="{% static 'images/t5.avif'%}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">100% Placement Assurance</h2>
+          <p class="lead">Our training institute takes pride in offering a comprehensive placement assurance program to support our students in their career journey.
+            We have established strong connections with a network of reputable companies and industry partners, enhancing the opportunities for our students to secure promising job placements.
+            Our placement assurance program is designed to equip students with the necessary skills, knowledge, and confidence to excel in interviews and showcase their abilities to potential employers.
+            A dedicated placement cell works tirelessly to bridge the gap between our students and prospective employers, facilitating recruitment drives, job fairs, and networking events.
+            Mock interviews, resume workshops, and career counseling sessions are integral components of our placement assurance program, preparing students for the challenges of the competitive job market.
+            We maintain a current and up-to-date database of job openings, ensuring that our students have access to a wide range of employment opportunities across various industries.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" src="{% static 'images/j.jpg'%}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var carouselElement = document.getElementById('myCarousel');
+            var carousel = new bootstrap.Carousel(carouselElement, {
+              interval: 5000
+            });
+            var nextButton = carouselElement.querySelector('.carousel-control-next');
+            var prevButton = carouselElement.querySelector('.carousel-control-prev');
+    
+            // Add event listener to next button
+            nextButton.addEventListener('click', function() {
+                carousel.next();
+            });
+    
+            // Add event listener to previous button
+            prevButton.addEventListener('click', function() {
+                carousel.prev();
+            });
+        });
+    </script>
+    
+
+    </div><!-- /.container -->
+  </div>    
+{%endblock%}
